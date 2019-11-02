@@ -1,0 +1,6 @@
+from sympy import symbols, diff
+import numpy as np
+x, y, z = symbols('x y', real=True)
+f = 4*x*y + x*y + x**3 + 8*(y**2)
+diff(f, x)
+
